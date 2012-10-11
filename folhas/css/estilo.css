@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* Simple fluid media
+	Nota: Midias fluidas requerem a remoção da altura(height) e da largura(width) dos 		
+	atributos de midia no HTML.
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 não suporta(para variar...) max-width então deixe por padrão com width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	9;
+	dw-gutter-percentage:	15;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 97.3913%;
+	padding-left: 1.3043%;
+	padding-right: 1.3043%;
+	border-bottom-color: #C3C5C4;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-image: url(../img/WarriorPit.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	color: #FFF;
+	text-align: center;
+}
+#main {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+#side {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+#footer {
+	clear: both;
+	float: left;
+	
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color: #FFF;
+	background-color: #333;
+	text-align: center;
+}
+
+h2, h3, p{
+	padding: 0 2.0%;
+}
+
+.floatLeft, .floatRight{ display:block; margin:15px auto;}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+		width: 98.3695%;
+		padding-left: 0.8152%;
+		padding-right: 0.8152%;
+	}
+	#header {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		font-size: 150%;
+	}
+	#main {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 61.8784%;
+		display: block;
+	}
+	#side {
+		clear: none;
+		float: left;
+		margin-left: 1.6574%;
+		width: 36.464%;
+		display: block;
+	}
+	#footer {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	.gridContainer {
+		width: 98.5507%;
+		max-width: 1000px;
+		padding-left: 0.7246%;
+		padding-right: 0.7246%;
+		margin: auto;
+	}
+	#header {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		font-size: 200%;
+	}
+	#main {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 54.9019%;
+		display: block;
+	}
+	#side {
+		clear: none;
+		float: left;
+		margin-left: 1.4705%;
+		width: 43.6274%;
+		display: block;
+	}
+	#footer {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.floatLeft{ float:left; margin:5px 10px 5px 0px;}
+	.floatRight{ float:right; margin:5px 10px 5px 0px;}
+}
