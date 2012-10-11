@@ -74,7 +74,7 @@ video {
   width: 100%;
   display: block;
   color: #99cc00;
-  background-color: #ff0000;
+  background-color: #241200;
   text-align: center;
 }
 h2,
@@ -82,10 +82,21 @@ h3,
 p {
   padding: 0 2.0%;
 }
+#footer p {
+  color: #996633;
+}
+p {
+  color: #996666;
+}
+h2,
+h3 {
+  color: #996600;
+}
 .floatLeft,
 .floatRight {
   display: block;
-  margin: 15px auto;
+  padding-bottom: 50px;
+  margin: 25px auto;
 }
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
@@ -162,12 +173,11 @@ p {
     width: 100%;
     display: block;
   }
-  .floatLeft {
+  .floatleft {
     float: left;
-    margin: 5px 10px 5px 0px;
-  }
-  .floatRight {
-    float: right;
-    margin: 5px 10px 5px 0px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 0px;
   }
 }
