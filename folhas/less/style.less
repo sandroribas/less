@@ -13,8 +13,9 @@ img, object, embed, video {
 @cor-p: 		#966;
 @bg-total: 		#9C0;*/
 
-@bg-total: 		#9C0;
+@bg-total: 		#fff;
 @bg-site:		#ccc;
+@bg-rodape:	#963;
 
 .margens(@bottom, @left, @right, @top){
 	margin-bottom: @bottom;
@@ -38,6 +39,7 @@ img, object, embed, video {
 		padding-left: 0.7246%;
 		padding-right: 0.7246%;
 		margin: auto;
+		margin-top: -0.7%;
 	}
 	#header {
 		clear: both;
@@ -45,6 +47,7 @@ img, object, embed, video {
 		background-image: url(../../img/WarriorPit.jpg);
 		background-repeat: no-repeat;
 		margin-left: 0;
+		margin-top:0px;
 		width: 100%;
 		display: block;
 		font-size: 200%;
@@ -74,5 +77,6 @@ img, object, embed, video {
 		margin-left: 0;
 		width: 100%;
 		display: block;
+		background-color: @bg-rodape;
 	}
 	.floatLeft, .floatRight{ display:block; padding-bottom:12px; margin:12px auto;}

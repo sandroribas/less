@@ -1,5 +1,5 @@
 body {
-  background-color: #99cc00;
+  background-color: #ffffff;
 }
 img,
 object,
@@ -34,6 +34,7 @@ h5 {
   padding-left: 0.7246%;
   padding-right: 0.7246%;
   margin: auto;
+  margin-top: -0.7%;
 }
 #header {
   clear: both;
@@ -41,6 +42,7 @@ h5 {
   background-image: url(../../img/WarriorPit.jpg);
   background-repeat: no-repeat;
   margin-left: 0;
+  margin-top: 0px;
   width: 100%;
   display: block;
   font-size: 200%;
@@ -73,6 +75,7 @@ h5 {
   margin-left: 0;
   width: 100%;
   display: block;
+  background-color: #996633;
 }
 .floatLeft,
 .floatRight {
