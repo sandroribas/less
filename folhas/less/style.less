@@ -1,0 +1,78 @@
+*{}
+body{ background-color:@bg-total;}
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 não suporta(para variar...) max-width então deixe por padrão com width 100% */
+.ie6 img {
+	width:100%;
+}
+/*@cor-rodape: 	#241200;
+@corp-rodape:	#963;
+@cor-hs:		#960;
+@cor-p: 		#966;
+@bg-total: 		#9C0;*/
+
+@bg-total: 		#9C0;
+@bg-site:		#ccc;
+
+.margens(@bottom, @left, @right, @top){
+	margin-bottom: @bottom;
+	margin-left: @left;
+	margin-right: @right;
+	margin-top: @top;
+}
+
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+/*---LAYOUT-----------*/
+	p, h1, h2, h3, h4,h5 { .margens(25px, 25px, 25px, 25px);}
+	.gridContainer {
+		width: 98.5507%;
+		max-width: 1000px;
+		padding-left: 0.7246%;
+		padding-right: 0.7246%;
+		margin: auto;
+	}
+	#header {
+		clear: both;
+		float: left;
+		background-image: url(../../img/WarriorPit.jpg);
+		background-repeat: no-repeat;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		font-size: 200%;
+	}
+	#main {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 54.9019%;
+		display: block;
+		background: @bg-site;
+		.border-radius-custom(0px, 0px, 10px, 10px);
+	}
+	#side {
+		clear: none;
+		float: left;
+		margin-left: 1.4705%;
+		width: 43.6274%;
+		display: block;
+		background: @bg-site;
+		.border-radius-custom(0px, 0px, 10px, 10px);
+		
+	}
+	#footer {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.floatLeft, .floatRight{ display:block; padding-bottom:12px; margin:12px auto;}

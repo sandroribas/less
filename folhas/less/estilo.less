@@ -17,6 +17,14 @@ img, object, embed, video {
 @corp-rodape:	#963;
 @cor-hs:		#960;
 @cor-p: 		#966;
+
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
 /*
 	Dreamweaver Fluid Grid Properties
 	----------------------------------
@@ -71,6 +79,7 @@ img, object, embed, video {
 	display: block;
 	background-color: #FFF;
 	margin-bottom: 10px;
+	.border-radius-custom(0px, 0px, 10px, 10px);
 }
 #footer {
 	clear: both;

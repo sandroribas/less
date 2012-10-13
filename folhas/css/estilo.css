@@ -66,6 +66,9 @@ video {
   display: block;
   background-color: #FFF;
   margin-bottom: 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 #footer {
   clear: both;
